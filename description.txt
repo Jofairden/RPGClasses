@@ -1,0 +1,4 @@
+Choose a class at the start of the game, then gain stats and perks relevant to that class as you kill bosses. Check the homepage for details on each class.
+
+Each class has an active ability, by default bound to 'Q'.
+

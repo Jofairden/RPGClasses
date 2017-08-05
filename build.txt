@@ -1,0 +1,10 @@
+author = Hiccup251
+version = 0.4.3
+homepage = http://forums.terraria.org/index.php?threads/class-based-rpg-mod.43901/
+displayName = RPG Classes
+hideCode = false
+hideResources = false
+includeSource = true
+includePDB = true
+languageVersion = 6
+buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*

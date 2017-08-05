@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D02CACDD-2DBC-40AC-BCD1-0E02F6FADDEE}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RPG</RootNamespace>
+    <AssemblyName>RPG</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="build.txt" />
+    <Content Include="description.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Buffs\ActiveCooldown.cs" />
+    <Compile Include="Buffs\Chum.cs" />
+    <Compile Include="Buffs\DeathMark.cs" />
+    <Compile Include="Buffs\DwarvenStout.cs" />
+    <Compile Include="Buffs\MonkPalm.cs" />
+    <Compile Include="Buffs\RumDrunk.cs" />
+    <Compile Include="Buffs\WarpStrength.cs" />
+    <Compile Include="Dusts\CelestialDust.cs" />
+    <Compile Include="Items\AngelContract.cs" />
+    <Compile Include="Items\AnglerContract.cs" />
+    <Compile Include="Items\ArcaneSniperContract.cs" />
+    <Compile Include="Items\BerserkerContract.cs" />
+    <Compile Include="Items\BlankContract.cs" />
+    <Compile Include="Items\BloodKnightContract.cs" />
+    <Compile Include="Items\CavalryContract.cs" />
+    <Compile Include="Items\CelestialContract.cs" />
+    <Compile Include="Items\CharacterInfo.cs" />
+    <Compile Include="Items\ChronomancerContract.cs" />
+    <Compile Include="Items\ConjurorContract.cs" />
+    <Compile Include="Items\DemonContract.cs" />
+    <Compile Include="Items\DragoonContract.cs" />
+    <Compile Include="Items\DwarfContract.cs" />
+    <Compile Include="Items\ExplorerContract.cs" />
+    <Compile Include="Items\ForgottenJournalPage.cs" />
+    <Compile Include="Items\FortressContract.cs" />
+    <Compile Include="Items\gItem.cs" />
+    <Compile Include="Items\HallowMageContract.cs" />
+    <Compile Include="Items\HarpyContract.cs" />
+    <Compile Include="Items\HeritorContract.cs" />
+    <Compile Include="Items\KnightContract.cs" />
+    <Compile Include="Items\MarksmanContract.cs" />
+    <Compile Include="Items\MermanContract.cs" />
+    <Compile Include="Items\MonkContract.cs" />
+    <Compile Include="Items\MothContract.cs" />
+    <Compile Include="Items\NinjaContract.cs" />
+    <Compile Include="Items\PharaohContract.cs" />
+    <Compile Include="Items\PirateContract.cs" />
+    <Compile Include="Items\RangerContract.cs" />
+    <Compile Include="Items\SageContract.cs" />
+    <Compile Include="Items\SavageContract.cs" />
+    <Compile Include="Items\SoulboundContract.cs" />
+    <Compile Include="Items\SpiritMageContract.cs" />
+    <Compile Include="Items\SwordContract.cs" />
+    <Compile Include="Items\TaintedElfContract.cs" />
+    <Compile Include="Items\VoidContract.cs" />
+    <Compile Include="Items\VoidwalkerContract.cs" />
+    <Compile Include="Items\WandererContract.cs" />
+    <Compile Include="Items\WarmageContract.cs" />
+    <Compile Include="Items\WarpKnightContract.cs" />
+    <Compile Include="Items\WerewolfContract.cs" />
+    <Compile Include="MPlayer.cs" />
+    <Compile Include="NPCs\GNPC.cs" />
+    <Compile Include="Projectiles\AnglerChum.cs" />
+    <Compile Include="Projectiles\AnglerShark.cs" />
+    <Compile Include="Projectiles\CelestialStar.cs" />
+    <Compile Include="Projectiles\ChronoGhost.cs" />
+    <Compile Include="Projectiles\ConjurorCrystal.cs" />
+    <Compile Include="Projectiles\DeathMark.cs" />
+    <Compile Include="Projectiles\Demon.cs" />
+    <Compile Include="Projectiles\gProj.cs" />
+    <Compile Include="Projectiles\HeritorDagger.cs" />
+    <Compile Include="Projectiles\HeritorGun.cs" />
+    <Compile Include="Projectiles\HeritorSpear.cs" />
+    <Compile Include="Projectiles\HeritorSword.cs" />
+    <Compile Include="Projectiles\MonkPalm.cs" />
+    <Compile Include="Projectiles\MothPoison.cs" />
+    <Compile Include="Projectiles\Shield1.cs" />
+    <Compile Include="Projectiles\Shield2.cs" />
+    <Compile Include="Projectiles\Shield3.cs" />
+    <Compile Include="Projectiles\SpiritKnight.cs" />
+    <Compile Include="Projectiles\WandererCharge.cs" />
+    <Compile Include="Projectiles\WandererPortal.cs" />
+    <Compile Include="Projectiles\WarpBolt.cs" />
+    <Compile Include="RPG.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553" />
+    <Reference Include="System" />
+    <Reference Include="Terraria">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\SteamApps\common\Terraria\Terraria.exe</HintPath>
+    </Reference>
+    <Reference Include="tmodloader">
+      <HintPath>..\..\..\..\..\..\Desktop\ModLoader\tmodloader.exe</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
